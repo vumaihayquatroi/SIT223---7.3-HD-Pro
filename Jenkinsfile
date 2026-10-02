@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    tools {
+        nodejs 'node18'
+    }
 
     environment {
         APP_NAME = 'sit223-app'
